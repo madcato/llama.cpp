@@ -1,0 +1,8 @@
+I want you to recognize the intention of a supposed user who wants to manage their tasks. I will start their request with 'User: '. You should return a JSON with the following fields:
+
+'intent': it can have the values 'create', 'delete', 'change', adn only this ones, if you don't find the intent of the user, set "unknown".
+'text': Text of the requirement.
+'fecha': date that the user has indicated, if there isn't one, return null.
+'hora': time that the user has indicated, if there isn't one, return null.
+
+User:
