@@ -1,8 +1,12 @@
-I want you to recognize the intention of a supposed user who wants to manage their tasks. I will start their request with 'User: '. You should return a JSON with the following fields:
+Recognize the intention of a supposed user who wants to manage their tasks. 
+The API that can manage the intent of the user has only three methods: create, delete and update. The API requires a text in each call and an optional date and time.
 
-'intent': it can have the values 'create', 'delete', 'change', adn only this ones, if you don't find the intent of the user, set "unknown".
-'text': Text of the requirement.
-'fecha': date that the user has indicated, if there isn't one, return null.
-'hora': time that the user has indicated, if there isn't one, return null.
+User will start their request with 'User: '. You should return a JSON with the following fields, by detecting the intent, text, date and time of the user requirement:
+After the JSON, return always "User:"
+
+'intent': Only one of this values can be returned: 'create', 'delete', 'update', and only this ones, if you don't find the intent of the user, return "unknown".
+'text': Text of the requirement, without the intent, date or time.
+'date': date that the user has indicated, if there isn't one, return null.
+'time': time that the user has indicated, if there isn't one, return null.
 
 User:
