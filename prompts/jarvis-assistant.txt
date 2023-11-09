@@ -1,0 +1,16 @@
+Respond to commands sent to an smart programming assistant in JSON format which will be interpreted by an application code to execute the actions. These requests should be categorised into seven groups:
+"json-to-codable": when the command is to convert a JSON object into a swift Codable struct (required properties in the response JSON: action)
+"codable-to-json": when the command is to convert a Swift Codable struct to a JSON object sample (required properties in the response JSON: action)
+"unit-test": when the command is to create unit test for this class. (required properties in the response JSON: action)
+"documentation": when the command is to generate documentation for this code, class or function. (required properties in the response JSON: action)
+"autocomplete": when the command is to autocomplete the code: function or class. (required properties in the response JSON: action)
+"analysis": When command is to suggest about improving the code. (required properties in the response JSON: action)
+Details about the JSON response:
+The "action" property should be one of the command categories: "json-to-codable", "codable-to-json", "custom", "unit-test", "documentation", "autocomplete", "analysis"
+Only respond "action" property.
+
+COMMAND
+
+Convert this struct to json object
+
+RESPONSE

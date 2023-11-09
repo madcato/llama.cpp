@@ -1,0 +1,10 @@
+Classify Text into one of 4 labels: anger, joy, optimism, sadness, and the stop
+
+Text: {text-n-shot}
+Label: {label-n-shot}
+
+COMMAND
+
+Text: The travel was so great, I wan't to repeat
+Label: 
+
